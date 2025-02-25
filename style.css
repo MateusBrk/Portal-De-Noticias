@@ -35,6 +35,7 @@ header h1 img {
     height: auto; 
 }
 
+/* Estilo navegação */
 nav ul {
     list-style: none; 
     padding: 0;
@@ -68,6 +69,15 @@ section {
     margin-bottom: 20px;
 }
 
+article {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
 /* Estilo da seção de destaque */
 .destaque {
     text-align: center;
@@ -75,8 +85,14 @@ section {
     background-color: #f9f9f9;
 }
 
+.des{
+    display: flex;
+    max-height: 350px;
+}
+
 .destaque h2 {
     margin-bottom: 20px;
+
 }
 
 section h2 {
@@ -84,30 +100,93 @@ section h2 {
     color: #333;
 }
 
-article {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.secao_imagem_destaque{
+    text-align: left;
 }
 
+.imagem_destaque{
+width: 40%;
+border-radius: 20px;
+}
+
+/* Card */ 
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffde59;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+  
+  
+  .comic-button:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  
+
+.texto_destaque{
+position: relative;
+right: 450px;
+white-space: nowrap;
+}
+
+.texto_destaque h3{
+    font-size: 30px;
+    color: #c9a104;
+}
+
+.texto_destaque p{
+position: absolute;
+top: 60px;
+left: 6px;
+font-size: 20px;
+}
+
+.texto_destaque a{
+    position: absolute;
+    top: 300px;
+    right: 490px;
+    color: #c9a104;
+}
+
+/* Estilo artigos */
 article h3 {
     margin-bottom: 10px;
-    color: #007BFF;
+    color: #c9a104;
 }
 
 article p {
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 article a {
-    color: #007BFF;
+    color: #c9a104;
     text-decoration: none;
 }
 
 article a:hover {
     text-decoration: underline;
+}
+
+article .imagem_noticia1{
+    width: 10%;
+    border-radius: 10px;
+}
+
+article .imagem_noticia2{
+    width: 10%;
+    border-radius: 10px;
 }
 
 /* Estilo do rodapé */
