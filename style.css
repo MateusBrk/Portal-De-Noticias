@@ -123,7 +123,8 @@ border-radius: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 0px #000;
     transition: all 0.3s ease;
-    position: absolute;
+    position: relative;
+    right: 450px;
 }
   
   
@@ -136,7 +137,7 @@ border-radius: 20px;
 
 .texto_destaque{
 position: relative;
-right: 450px;
+right: 650px;
 white-space: nowrap;
 }
 
