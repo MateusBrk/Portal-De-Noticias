@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinemania - Notícias de Filmes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Link do Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Links das fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1><img src="images/Cinemania.jpg"></h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#filmes">Filmes</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <h1><img src="images/Cinemania.jpg" /></h1>
+      <nav class="navegação">
+        <ul>
+          <li><a href="#inicio">Filmes</a></li>
+          <li><a href="#noticias">Séries</a></li>
+          <li><a href="#filmes">Prêmios</a></li>
+          <li><a href="#sobre">Celebridades</a></li>
+          <li><a href="#contato">Sobre</a></li>
+        </ul>
+      </nav>
+      <button class="search-button">
+        <i class="fas fa-search"></i>
+        <!-- Ícone de lupa -->
+      </button>
     </header>
 
     <main>
-        <section class="destaque">
-            <h2>Destaque da Semana</h2>
-            <article class="des">
-                <div class="secao_imagem_destaque"><img src="images/fernandaTorres.jpg" alt="" class="imagem_destaque">
-                <button class="comic-button">Oscar 2025</button>
-                </div>
-                <div class="texto_destaque">
-                    <h3>The Guardian enaltece Fernanda Torres</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget odio mattis, dictum leo id,
-                        fermentum odio. </p>
-                    <a href="#">Leia mais</a>
-                </div>
-            </article>
-        </section>
+      <section class="destaque">
+        <h2 class="destaque_h2">Destaque da Semana</h2>
+        <article class="des">
+          <div class="secao_imagem_destaque">
+            <img
+              src="images/fernandaTorres.jpg"
+              alt=""
+              class="imagem_destaque"
+            />
+            <button class="comic-button">Oscar 2025</button>
+          </div>
+          <div class="texto_destaque">
+            <h3>The Guardian enaltece Fernanda Torres</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget
+              odio mattis, dictum leo id, fermentum odio.
+            </p>
+            <a href="#">Leia mais</a>
+          </div>
+        </article>
+      </section>
 
-        <section class="noticias">
-            <h2>Últimas Notícias</h2>
-            <article>
-                <h3>Título da Notícia 1</h3>
-                <img src="images/fernandaTorres.jpg" alt="" class="imagem_noticia1">
-                <p>blablabla</p>
-                <a href="#">Leia mais</a>
-            </article>
-            <article>
-                <h3>Título da Notícia 2</h3>
-                <img src="images/fernandaTorres.jpg" alt="" class="imagem_noticia2">
-                <p>blablabla</p>
-                <a href="#">Leia mais</a>
-            </article>
-        </section>
+      <section class="ultimos-lançamentos">
+        <h2>Últimos Lançamentos</h2>
+        <div class="lista-lançamentos">
+          <ul>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">A Mérina dos Meus Olhos</a></li>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">Übermensch</a></li>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">Máquina do Tempo</a></li>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">Sem Chão</a></li>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">Último Alvo</a></li>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">O Brutalista</a></li>
+            <li><img src="images/superman.jpg" alt="Superman" class="imagem-lançamento"><a href="#">Reacher</a></li>
+          </ul>
+          <a href="#" class="ver-todas">VER TODAS OS LANÇAMENTOS</a>
+        </div>
+      </section>
+
+      <section class="noticias">
+        <h2>Últimas Notícias</h2>
+        <article>
+          <h3>Título da Notícia 1</h3>
+          <img src="images/fernandaTorres.jpg" alt="" class="imagem_noticia1" />
+          <p>blablabla</p>
+          <a href="#">Leia mais</a>
+        </article>
+        <article>
+          <h3>Título da Notícia 2</h3>
+          <img src="images/fernandaTorres.jpg" alt="" class="imagem_noticia2" />
+          <p>blablabla</p>
+          <a href="#">Leia mais</a>
+        </article>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Cinemania. Todos os direitos reservados.</p>
+      <p>&copy; 2025 Cinemania. Todos os direitos reservados.</p>
     </footer>
-</body>
-
+  </body>
 </html>
