@@ -33,8 +33,8 @@ header {
   padding: 10px;
   align-items: center;
   justify-content: space-between;
-  height: 80px; 
-  z-index: 1000; 
+  height: 80px;
+  z-index: 1000;
 }
 
 header h1 img {
@@ -89,8 +89,6 @@ nav ul li a:hover {
   color: #ffde59;
 }
 
-
-
 /* Estilo do conteúdo principal */
 main {
   flex: 1;
@@ -133,7 +131,7 @@ section {
   transition: transform 0.5s ease;
 }
 
-.imagem_destaque:hover{
+.imagem_destaque:hover {
   transform: scale(1.05);
 }
 
@@ -170,9 +168,9 @@ section {
 
 /* Botão de destaque */
 .comic-button {
-  position: absolute; 
-  bottom: 20px; 
-  left: 20px; 
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -184,7 +182,7 @@ section {
   border-radius: 10px;
   box-shadow: 5px 5px 0px #000;
   transition: all 0.3s ease;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .comic-button:active {
@@ -193,7 +191,7 @@ section {
   transform: translateY(4px);
 }
 
-/*Estilo lançamentos*/
+/* Estilo lançamentos */
 .ultimos-lançamentos {
   margin-bottom: 20px;
   padding: 20px;
@@ -219,28 +217,28 @@ section {
 
 .lista-lançamentos ul li {
   margin-bottom: 10px;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   text-align: center;
   width: 150px;
 }
 
-.lista-lançamentos ul li a{
-font-weight: bold;
+.lista-lançamentos ul li a {
+  font-weight: bold;
 }
 
 .imagem-lançamento {
-  width: 100%; 
-  max-width: 150px; 
+  width: 100%;
+  max-width: 150px;
   height: 200px;
-  border-radius: 10px; 
+  border-radius: 10px;
   margin-bottom: 10px;
   object-fit: cover;
   border: 5px ridge #ffde59;
   transition: transform 0.3s ease;
 }
 
-.imagem-lançamento:hover{
+.imagem-lançamento:hover {
   transform: scale(1.1);
 }
 
@@ -272,10 +270,10 @@ font-weight: bold;
 }
 
 /* Estilo artigos */
-.noticias{
-  max-height: 200vh; 
-  width: 64vw; 
-  float: left; 
+.noticias {
+  max-height: 200vh;
+  width: 64vw;
+  float: left;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -284,7 +282,7 @@ font-weight: bold;
   gap: 20px;
 }
 
-.noticias h2{
+.noticias h2 {
   margin-bottom: 20px;
 }
 
@@ -308,31 +306,31 @@ article a:hover {
 }
 
 .imagem_noticia {
-  width: 30%; 
-  max-width: 300px; 
+  width: 30%;
+  max-width: 300px;
   border-radius: 5px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   transition: transform 0.5s ease;
 }
 
-.imagem_noticia:hover{
+.imagem_noticia:hover {
   transform: scale(1.05);
 }
 
 hr {
-  border: 0; 
-  height: 1px; 
-  background-color: #ccc; 
-  margin: 10px 0; 
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
 }
 
 .noticias-e-bilheterias {
-  display: flex; 
+  display: flex;
   gap: 20px;
 }
 
 .maiores-bilheterias {
-  flex: 1; 
+  flex: 1;
   padding: 20px;
   max-height: 110vh;
   background-color: #b0b0b0;
@@ -341,15 +339,14 @@ hr {
   border: 2px ridge #f9f9f9;
 }
 
-
 .maiores-bilheterias ul {
   list-style: none;
   padding: 0;
 }
 
 .maiores-bilheterias ul hr {
-background-color: #252525;
-font-weight: bold;
+  background-color: #252525;
+  font-weight: bold;
 }
 
 .maiores-bilheterias ul li {
@@ -362,20 +359,19 @@ font-weight: bold;
   font-size: 15px;
 }
 
-.top{
+.top {
   font-weight: bold;
   font-size: 50px !important;
 }
 
-.bilheteria{
+.bilheteria {
   font-weight: bold;
-  font-size: 15px ;
+  font-size: 15px;
 }
 
 .maiores-bilheterias ul hr {
   background-color: #252525;
-  }
-
+}
 
 /* Estilo do rodapé */
 footer {
@@ -385,4 +381,185 @@ footer {
   background-color: #333;
   color: #fff;
   margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  header h1 img {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  /* Seção de destaque */
+  .des {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagem_destaque {
+    max-width: 100%;
+  }
+
+  .texto_destaque {
+    text-align: center;
+  }
+
+  /* Seção de lançamentos */
+  .lista-lançamentos ul {
+    gap: 20px;
+  }
+
+  .lista-lançamentos ul li {
+    width: 100%;
+  }
+
+  .imagem-lançamento {
+    max-width: 100%;
+  }
+
+  /* Seção de notícias e bilheterias */
+  .noticias-e-bilheterias {
+    flex-direction: column;
+  }
+
+  .noticias,
+  .maiores-bilheterias {
+    width: 100%;
+    max-height: none;
+  }
+
+  .imagem_noticia {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 10px;
+  }
+
+  /* Ajustes de fontes e espaçamentos */
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .texto_destaque h3 {
+    font-size: 1.2em;
+  }
+
+  .texto_destaque p {
+    font-size: 1em;
+  }
+
+  .comic-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .top {
+    font-size: 30px !important;
+  }
+
+  .bilheteria {
+    font-size: 12px;
+  }
+}
+
+/* Estilo da página de notícia detalhada */
+.noticia-detalhe {
+  max-width: 2000px;
+  margin: 100px auto 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px ridge #f9f9f9;
+}
+
+.noticia-detalhe h2 {
+  font-size: 32px;
+  color: #c9a104;
+  margin-bottom: 20px;
+}
+
+.imagem-noticia-detalhe {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.data-publicacao {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.conteudo-noticia p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.conteudo-noticia strong {
+  color: #c9a104;
+}
+
+.conteudo-noticia em {
+  font-style: italic;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffde59;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.voltar:hover {
+  background-color: #fcf414;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .noticia-detalhe {
+    margin: 80px 10px 20px;
+    padding: 15px;
+  }
+
+  .noticia-detalhe h2 {
+    font-size: 24px;
+  }
+
+  .conteudo-noticia p {
+    font-size: 16px;
+  }
+
+  .voltar {
+    width: 100%;
+    text-align: center;
+  }
 }
